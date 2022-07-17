@@ -6,10 +6,9 @@ const Home: NextPage = () => {
   return (
     <div className="bg-gradient-to-t from-black to-transparent h-screen" >
       <div className="-z-30 absolute w-full h-screen">
-      <Image 
-      src = "/barbertools.png"
-      layout = "fill"
-      objectFit="cover"       
+      <img 
+      src = "https://waveride1.s3.us-east-2.amazonaws.com/barbertools.png"      
+      className=" w-full h-[400px] lg:h-[600px] object-cover pt-10"
       />
       </div>
       <Head>
@@ -57,23 +56,25 @@ const Home: NextPage = () => {
       </header>
      
       <main className="float-left w-full">
-        <h2 className=" sm:text-7xl text-6xl text-[#b1af72] text-center  pt-60 pb-10 drop-shadow-sm">RAZOR</h2>
+        <h2 className=" sm:text-7xl text-6xl text-[#b1af72] text-center font-bold  pt-60 pb-10 drop-shadow-sm">RAZOR</h2>
         <h3 className="text-gray-500 text-sm md:pb-20 pb-10 text-center z-0">YOUR JOURNEY BEGINS HERE</h3>
-        <div className="flex justify-center">
-          
-        </div>
+  
 
-        <div className="m-auto lg:w-[60%] md:w-[80%] sm:w[90%]">
-          <div className=" text-slate-200 font-thin text-lg justify-center flex w-full">
-            <p className="lg:pb-10 sm:pb-10 md:py-10 p-4 z-10  lg:w-[500px] md:w-[500px] mg:text-md float-left lg:text-lg lg:ml-[100px] text-sm">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+ 
+        <div className="mx-auto max-w-4xl">
+          <div className=" text-slate-200 font-thin text-lg grid grid-cols-1 sm:grid-cols-2">
+            <span>
+            <p className="text-sm p-4 sm:ml-[25%] w-[100%] max-w-lg">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
             </p>
-          </div>
-            <div className="flex w-full justify-center">
+            </span>
+          
+            <span className=" w-full align-middle sm:ml-[25%]">
             <button className=" bg-gradient-to-bl from-[#b1af72] to-[#725a17] lg:mt-10 z-30 cursor-pointer 
-            hover:to-[#fff] p-1 px-2 m-4 rounded-sm text-black float-left">Book Now</button>
-            </div>
+            hover:to-[#fff] p-1 px-1 m-4 rounded-sm text-black float-left">Book Now</button>
+            </span>
             
+            </div>
         </div>
 
         <div className="flex w-full flex-wrap justify-left pt-10">
