@@ -5,10 +5,10 @@ import Image from 'next/image'
 const Home: NextPage = () => {
   return (
     <div className="bg-gradient-to-t from-black to-transparent h-screen" >
-      <div className="-z-30 absolute w-full h-screen">
-      <img 
-      src = "https://waveride1.s3.us-east-2.amazonaws.com/barbertools.png"      
-      className=" w-full h-[400px] lg:h-[600px] object-cover pt-10"
+      <div className="-z-30 absolute -top-[29%] md:-top-[14%] xl:-top-[8%] w-full h-screen">
+      <Image src="https://waveride1.s3.us-east-2.amazonaws.com/barbertools.png"
+        layout="fill"
+        objectFit="contain"
       />
       </div>
       <Head>
@@ -56,7 +56,7 @@ const Home: NextPage = () => {
       </header>
      
       <main className="float-left w-full">
-        <h2 className=" sm:text-7xl text-6xl text-[#b1af72] text-center font-bold  pt-60 pb-10 drop-shadow-sm">RAZOR</h2>
+        <h2 className=" sm:text-7xl text-6xl text-[#b1af72] text-center font-bold  pt-40 pb-10 drop-shadow-sm">RAZOR</h2>
         <h3 className="text-gray-500 text-sm md:pb-20 pb-10 text-center z-0">YOUR JOURNEY BEGINS HERE</h3>
   
 
