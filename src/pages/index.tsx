@@ -4,12 +4,13 @@ import Image from 'next/image'
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-gradient-to-t from-black to-transparent h-screen" >
-      <div className="-z-30 absolute -top-[29%] md:-top-[14%] xl:-top-[8%] w-full h-screen">
-      <Image src="https://waveride1.s3.us-east-2.amazonaws.com/barbertools.png"
+    <div className="h-screen" >
+      <div className="-z-30 absolute w-full sm:h-screen h-[50%]">
+      <Image src="https://ik.imagekit.io/zhmk2wx4u/barbertools_rg0kU5rGj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1660087148055"
         layout="fill"
-        objectFit="contain"
+        objectFit="cover"        
       />
+      
       </div>
       <Head>
         <title>Home | Razor</title>
